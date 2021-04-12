@@ -1,16 +1,21 @@
-PATH
-  remote: .
+GIT
+  remote: https://github.com/ghiculescu/kt-paperclip.git
+  revision: 4347fab325033078abe26e68af03fd65d971054e
+  branch: use-marcel
   specs:
-    mongoid-paperclip (1.0.0.pre)
-      kt-paperclip
-      paperclip (>= 2.3.6, != 4.3.3, != 4.3.0)
+    kt-paperclip (6.4.1)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      marcel (~> 1.0.0)
+      mime-types
+      terrapin (~> 0.6.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (6.1.1)
-      activesupport (= 6.1.1)
-    activesupport (6.1.1)
+    activemodel (6.1.3.1)
+      activesupport (= 6.1.3.1)
+    activesupport (6.1.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -18,40 +23,28 @@ GEM
       zeitwerk (~> 2.3)
     climate_control (0.2.0)
     concurrent-ruby (1.1.8)
-    diff-lcs (1.2.5)
-    i18n (1.8.8)
+    diff-lcs (1.4.4)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    kt-paperclip (6.4.1)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
+    marcel (1.0.1)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2020.1104)
-    mimemagic (0.3.5)
-    minitest (5.14.3)
-    paperclip (6.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
-    rake (11.2.2)
-    rspec (3.5.0)
-      rspec-core (~> 3.5.0)
-      rspec-expectations (~> 3.5.0)
-      rspec-mocks (~> 3.5.0)
-    rspec-core (3.5.2)
-      rspec-support (~> 3.5.0)
-    rspec-expectations (3.5.0)
+    mime-types-data (3.2021.0225)
+    minitest (5.14.4)
+    rake (13.0.3)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-mocks (3.5.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-support (3.5.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     tzinfo (2.0.4)
@@ -60,12 +53,13 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bundler
-  mongoid-paperclip!
+  kt-paperclip!
   rake
   rspec
 
 BUNDLED WITH
-   2.2.8
+   2.2.15
